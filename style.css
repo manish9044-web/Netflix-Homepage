@@ -180,6 +180,9 @@ input[type="radio"]{
     max-height: 600px;
     padding: 30px 20px;
 }
+.accordion input[type="radio"]:not(:checked) + label + .content{
+    max-height: 0;
+}
 .accordion input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
 }
